@@ -91,7 +91,10 @@ export const ChatMessages = ({
   }
 
   return (
-    <div ref={chatRef} className="flex-1 flex flex-col py-4 overflow-y-auto">
+    <div
+      ref={chatRef}
+      className="flex-1 flex flex-col py-4 overflow-y-auto scrollbar-thin scrollbar-thumb-zinc-800 dark:scrollbar-track-[#0a0a0a] scrollbar-track-white"
+    >
       {!hasNextPage && <div className="flex-1" />}
       {!hasNextPage && <ChatWelcome type={type} name={name} />}
       {hasNextPage && (

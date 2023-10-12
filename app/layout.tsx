@@ -27,7 +27,7 @@ export default function RootLayout({
       }}
     >
       <html lang="en" suppressHydrationWarning>
-        <body className={cn("font-mono bg-white dark:bg-[#000000]")}>
+        <body className="font-mono bg-white dark:bg-[#000000] scrollbar scrollbar-thumb-gray-900 scrollbar-track-gray-100 scrollbar-rounded-md">
           <ThemeProvider
             attribute="class"
             defaultTheme="dark"
