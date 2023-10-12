@@ -36,8 +36,8 @@ interface ChatItemProps {
 
 const roleIconMap = {
   GUEST: null,
-  MODERATOR: <ShieldCheck className="h-4 w-4 ml-2 text-indigo-500" />,
-  ADMIN: <ShieldAlert className="h-4 w-4 ml-2 text-rose-500" />,
+  MODERATOR: <ShieldCheck className="h-4 w-4 ml-2  text-slate-700" />,
+  ADMIN: <ShieldAlert className="h-4 w-4 ml-2 text-indigo-500" />,
 };
 
 const formSchema = z.object({
@@ -144,7 +144,7 @@ export const ChatItem = ({
                 {roleIconMap[member.role]}
               </ActionTooltip>
             </div>
-            <span className="text-xs text-zinc-500 dark:text-zinc-400">
+            <span className="hidden sm:block text-xs text-zinc-500 dark:text-zinc-400">
               {timestamp}
             </span>
           </div>
@@ -216,11 +216,11 @@ export const ChatItem = ({
                     </FormItem>
                   )}
                 />
-                <Button disabled={isLoading} size="sm" variant="primary">
+                <Button disabled={isLoading} size="sm" className="bg-red-700">
                   Save
                 </Button>
               </form>
-              <span className="text-[10px] mt-1 text-zinc-400">
+              <span className="hidden sm:block text-[10px] mt-1 text-zinc-400">
                 Press escape to cancel, enter to save
               </span>
             </Form>

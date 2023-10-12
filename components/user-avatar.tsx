@@ -8,7 +8,12 @@ interface UserAvatarProps {
 
 export const UserAvatar = ({ src, className }: UserAvatarProps) => {
   return (
-    <Avatar className={cn("h07 w-7 md:h-10 md:w-10", className)}>
+    <Avatar
+      className={cn(
+        "h-7 w-7 md:h-10 md:w-10 invert hue-rotate-90 brightness-[80%]",
+        className
+      )}
+    >
       <AvatarImage src={src} />
     </Avatar>
   );
