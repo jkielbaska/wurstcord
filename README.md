@@ -8,3 +8,4 @@ This is wurstcord chatting app
 - add tests!
 - add meme generator
 - refactor code
+- improve landing page
