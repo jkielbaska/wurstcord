@@ -20,7 +20,13 @@ export const MediaRoom = ({ chatId, video, audio }: MediaRoomProps) => {
   useEffect(() => {
     if (!user?.firstName || !user?.lastName) return;
 
-    const name = `${user.firstName} ${user.lastName}`;
+    const random4DigitNumber = () => {
+      return Math.floor(Math.random() * 9000) + 1000;
+    };
+
+    const name = `${user.firstName ?? ""} ${
+      user.lastName ?? ""
+    } - ${random4DigitNumber()}`;
 
     (async () => {
       try {
