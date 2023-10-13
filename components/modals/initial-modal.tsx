@@ -101,7 +101,7 @@ export const InitialModal = () => {
           appearance={{
             elements: {
               avatarBox:
-                "mb-[25px] h-[48px] w-[48px] invert hue-rotate-90 brightness-[80%]",
+                "outline-none border-none mb-[25px] h-[48px] w-[48px] invert hue-rotate-90 brightness-[80%]",
             },
           }}
         />
