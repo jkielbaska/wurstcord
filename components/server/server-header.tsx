@@ -5,6 +5,7 @@ import { MemberRole } from "@prisma/client";
 import {
   ChevronDown,
   LogOut,
+  Plus,
   PlusCircle,
   Settings,
   Trash,
@@ -50,6 +51,13 @@ export const ServerHeader = ({ server, role }: ServerHeaderProps) => {
             <UserPlus className="h-4 w-4 ml-auto" />
           </DropdownMenuItem>
         )}
+        <DropdownMenuItem
+          onClick={() => onOpen("joinServer", { server })}
+          className="px-3 py-2 text-sm cursor-pointer"
+        >
+          Join Server
+          <Plus className="h-4 w-4 ml-auto" />
+        </DropdownMenuItem>
         {isAdmin && (
           <DropdownMenuItem
             onClick={() => onOpen("editServer", { server })}
