@@ -6,6 +6,7 @@ This is wurstcord chatting app
 
 - readme
 - add tests!
+- add translation
 - add meme generator
 - refactor code
 - improve landing page
