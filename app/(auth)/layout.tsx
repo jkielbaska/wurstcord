@@ -1,4 +1,13 @@
-const AuthLayout = ({ children }: { children: React.ReactNode }) => {
+import { redirect } from "next/navigation";
+import { currentProfile } from "@/lib/current-profile";
+
+const AuthLayout = async ({ children }: { children: React.ReactNode }) => {
+  const profile = await currentProfile();
+
+  if (profile) {
+    return redirect("/");
+  }
+
   return (
     <>
       <h1 className="w-full flex justify-center uppercase text-5xl p-5">
