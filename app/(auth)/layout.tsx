@@ -25,7 +25,7 @@ const AuthLayout = async ({ children }: { children: React.ReactNode }) => {
           </li>
         </ul>
       </div>
-      <div className="flex flex-col items-center justify-center h-2/4">
+      <div className="flex flex-col items-center mt-[55px] sm:mt-0 sm:justify-center h-2/4">
         <p className="p-5 text-center">
           remember - you can always delete your server or account
         </p>
